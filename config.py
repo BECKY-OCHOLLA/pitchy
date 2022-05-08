@@ -6,7 +6,7 @@ import os
 class Config:
     debug = True
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://cate:love1234@localhost/love'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://Becky:love1234@localhost/pitchy'
 
     #  email configurations
     MAIL_SERVER = 'smtp.gmail.com'
