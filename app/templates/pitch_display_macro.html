@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 {% macro display_pitches(posts) %}
+<script src="https://kit.fontawesome.com/6644dc7bfb.js" crossorigin="anonymous"></script>
 <div class="container-fluid">
     <div>
         <br><br>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id="pitch1" style="color:rgb(11, 11, 44);text-align:center; background:rgb(116, 116, 238);">
         <div class="overlay">
-            <h1 class="">Pitchy-pitches</h1>
-            <a href="/new_post"><button class="btn">New Pitch</button></a>
+            <h1 class="">Pitches</h1>
+            <a href="/new_post"><button class="btn" style="color:white;font: size 45px;">New Pitch</button></a>
         </div>
     </div>
     <div class="card-columns">
@@ -20,10 +21,10 @@
             </div>
             <div class="card-footer foot_flex d-block mx-auto">
                 <a href="/comment/{{my_post.id}}"><button class="btn btn-info">Comment</button></a>
-                <a href="/like/{{my_post.id}}"><button class="btn btn-success">Like {{my_post.up_vote.count()}}</button></a>
-                <h1>{{upvotes}}</h1>
-                <a href="/dislike/{{my_post.id}}"><button class="btn btn-danger">Dislike {{my_post.down_vote.count()}}</button></a>
-                <h4></h4>
+                <a href="/like/{{my_post.id}}"><i class="fa-solid fa-thumbs-up " style="color:green;text-align:center;">{{my_post.up_vote.count()}}</i></a>
+                <!-- <h1>{{upvotes}}</h1> -->
+                <a href="/dislike/{{my_post.id}}"><i class="fa-solid fa-thumbs-down " style="color:red;padding-left: 25px;">{{my_post.down_vote.count()}}</i></a>
+                
             </div>
         </div>
         {% endfor %}
