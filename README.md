@@ -93,7 +93,7 @@ python3 manage.py test.
 ochollabecky@gmail.com
 
 * Live link
-You can view the project through this link 
+You can view the project through this link  https://bekitas-pitchup.herokuapp.com/ 
 
 ## License
 Copyright (c) 2022 Becky Ocholla
